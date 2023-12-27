@@ -4,6 +4,8 @@
 
 Here is a simple WinRAR program that launches through Wine and can associate with Linux compressed files.
 
+![screen](./assets/screen.gif)
+
 ### Usage 使用
 
 First, install Wine. Then clone this project to any directory and double-click the WinrarForLinux program to execute it.
