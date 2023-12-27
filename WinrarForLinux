@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# 获取传入的文件路径
+file_path="$1"
+
+if [[ -n "$file_path" ]]; then
+  # 替换文件路径中的目录分隔符
+  new_path=$(echo "$file_path" | sed 's|/|\\|g')
+  
+  # 调用程序打开
+  wine "$(dirname "${BASH_SOURCE[0]}")/WinRAR.exe" "$new_path"
+else
+  # 调用程序打开
+  wine "$(dirname "${BASH_SOURCE[0]}")/WinRAR.exe"
+fi
